@@ -1,0 +1,88 @@
+html{
+
+    margin: 5px;
+    border: 1px solid red;
+}
+
+body{
+
+    padding: 5px;
+    border: 1px solid green;
+}
+
+#content{
+
+    padding: 5px;
+    border: 1px solid blue;
+
+    display: flex;
+    justify-content: center;
+}
+
+#primary-container{
+
+    width: 70vw;
+
+    padding: 5px;
+    border: 1px solid brown;
+
+    display: grid;
+
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 5px;
+}
+
+#primary-container div{
+    border: 1px solid blueviolet;
+}
+
+#sectionA{
+    
+    grid-area: 1 / 1 / 2 / 3;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#sectionB{
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+    padding: 5px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#sectionB div{   
+    width: 300px;
+}
+
+#sectionC{
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+    padding: 5px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#reviews, #buttons{
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+    padding: 5px;
+
+    align-items: start;
+}

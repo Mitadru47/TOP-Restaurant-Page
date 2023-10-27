@@ -161,7 +161,7 @@ body{
     justify-content: center;
 }
 
-#reviews, #foodItems, #drinks{
+#reviews, #foodItems, #drinks, #contactItems{
 
     display: flex;
     flex-direction: column;
@@ -175,16 +175,16 @@ body{
     border-radius: 10px;
 }
 
-#foodItems, #drinks{
+#foodItems, #drinks, #contactItems{
 
     width: 350px;
     height: 300px;
 }
 
-.review, .itemName{
+.review, .itemName, .contactLine1{
     font-size: 1.2rem;
 }
 
-.reviewer, .itemPrice{
+.reviewer, .itemPrice, .contactLine2{
     font-size: 0.75rem;
 }

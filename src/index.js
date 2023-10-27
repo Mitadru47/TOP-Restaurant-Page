@@ -1,6 +1,10 @@
 import { renderHome } from "./home";
 import { renderCollection } from "./collection";
 import { renderContact } from "./contact";
+import { renderHeader } from "./header";
+
+renderHeader();
+renderHome();
 
 let homeButton = document.querySelector("#home-button");
 homeButton.addEventListener("click", () => {
@@ -70,5 +74,3 @@ contactButton.addEventListener("click", () => {
     renderContact();
 
 }, true);
-
-renderHome();

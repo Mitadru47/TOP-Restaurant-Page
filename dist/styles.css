@@ -145,7 +145,23 @@ body{
     align-items: center;
 }
 
-#reviews{
+#secondary-container{
+
+    display: flex;
+    gap: 10px;
+
+    /* border: 2px solid black; */
+    border-radius: 10px;
+
+    width: 750px;
+    height: 350px;
+
+    padding: 20px;
+
+    justify-content: center;
+}
+
+#reviews, #foodItems, #drinks{
 
     display: flex;
     flex-direction: column;
@@ -159,10 +175,16 @@ body{
     border-radius: 10px;
 }
 
-.review{
+#foodItems, #drinks{
+
+    width: 350px;
+    height: 300px;
+}
+
+.review, .itemName{
     font-size: 1.2rem;
 }
 
-.reviewer{
+.reviewer, .itemPrice{
     font-size: 0.75rem;
 }

@@ -1,4 +1,4 @@
-function renderhome(){
+function renderHome(){
 
     // Section B:
 
@@ -77,4 +77,4 @@ function renderhome(){
     primaryContainer.appendChild(sectionC);
 }
 
-export { renderhome };
+export { renderHome };

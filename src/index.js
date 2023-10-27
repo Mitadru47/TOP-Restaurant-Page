@@ -1,4 +1,5 @@
-import { renderhome } from "./home";
+import { renderHome } from "./home";
+import { renderCollection } from "./collection";
 
 let homeButton = document.querySelector("#home-button");
 homeButton.addEventListener("click", () => {
@@ -7,14 +8,43 @@ homeButton.addEventListener("click", () => {
     
         let sectionB = document.querySelector("#sectionB");
         sectionB.remove();
+    
+    }
+
+    catch(error){console.log("Section B - Handled!");}
+
+    try{
 
         let sectionC = document.querySelector("#sectionC");
         sectionC.remove();
     }
 
-    catch(error){console.log("Handled!");}
-    renderhome();
+    catch(error){console.log("Section C - Handled!");}
+    renderHome();
 
 }, true);
 
-// renderhome();
+let collectionsButton = document.querySelector("#collection-button");
+collectionsButton.addEventListener("click", () => {
+
+    try{
+    
+        let sectionB = document.querySelector("#sectionB");
+        sectionB.remove();
+    
+    }
+
+    catch(error){console.log("Section B - Handled!");}
+
+    try{
+
+        let sectionC = document.querySelector("#sectionC");
+        sectionC.remove();
+    }
+
+    catch(error){console.log("Section C - Handled!");}
+    renderCollection();
+
+}, true);
+
+// renderCollection();
